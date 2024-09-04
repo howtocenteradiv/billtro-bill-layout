@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Resets */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+.bill{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bill-wrapper{
+    width: 600px;
+    padding: 24px 16px;
+}
+
+.info-wrapper{
+    border: 1px solid grey;
+    padding: 8px;
+}
+
+.date-ref-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ref-no, .date{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.ref-span{
+    color: grey;
+}
+
+.supplier-customer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px 0px 0px;
+}
+
+.supplier-header,
+.customer-header{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.supplier-name,
+.customer-name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #B90E0A;
+    margin-bottom: 16px;
+}
+
+.supplier-vat-pan,
+.customer-vat-pan,
+.supplier-address,
+.customer-address,
+.supplier-contact,
+.customer-contact{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.item-list-wrapper{
+    margin-top: 24px;
+    border: 1px solid grey;
+}
+
+.item-slice{
+    border-bottom: 2px solid #B90E0A;
+}
+
+.name-nom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.item-name{
+    padding: 6px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hs-code{
+    color: rgba(red, green, blue, alpha);
+}
+
+.item-no{
+    padding: 6px;
+    color: #B90E0A;
+    font-weight: 600;
+    border-left: 1px solid grey;
+    padding-left: 6px;
+}
+
+.qty-rate-discount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.qty{
+    font-size: 16px;
+    color: grey;
+    padding: 6px 100px 6px 6px;
+    border-right: 1px solid grey;
+}
+
+.rate{
+    padding: 6px 50px 6px 6px;
+    border-right: 1px solid grey;
+}
+
+.discount{
+    padding-right: 6px;
+}
+
+.discount-price-amount,
+.vat-sub-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.vat-sub-total{
+    border: none;
+}
+
+.price-after-discount,
+.vat-amount{
+    padding: 6px 100px 6px 6px;
+    border-right: 1px solid grey;
+}
+
+.amount,
+.sub-total{
+    padding-right: 6px;
+}
+
+
+.hs-code-span,
+.billtro-no{
+    color: rgba(185, 14, 10, 0.6);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.code-no-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.qty-span,
+.rate-span,
+.discounted-price,
+.amount-span,
+.vat-span,
+.discount-span,
+.bill-closed-span,
+.span-billtro-no-span,
+.value
+{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.qty,
+.rate,
+.discount,
+.price-after-discount,
+.amount,
+.vat-amount,
+.hs-code,
+.bill-closed,
+.key{
+    color: grey;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sub-total{
+    color: #B90E0A;
+    font-weight: 500;
+}
+
+.sub-total-span{
+    color: black;
+    font: 500;
+}
+
+.detail-wrapper{
+    border: 1px solid grey;
+    margin-top: 32px;
+}
+
+.detail-top,
+.detail-middle{
+    padding: 10px 6px;
+    border-bottom: 1px solid grey;
+}
+
+.detail-bottom{
+    padding: 6px;
+}
+
+.bill-closed,
+.billtro-no{
+    text-align: end;
+}
+
+.bill-closed{
+    padding-bottom: 8px;
+}
+
+.detail-slice{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.block{
+    display: block;
+    padding-top: 14px;
+}
+
+.tag{
+    color: #B90E0A;
+}
+
+.underlined{
+    text-decoration: underline;
+}
